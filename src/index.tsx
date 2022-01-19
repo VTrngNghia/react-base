@@ -7,10 +7,11 @@ import "./tailwind-after.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider as AntdProvider } from "antd";
+import genValidationMessages from "./common/genValidationMessages";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AntdProvider>
+    <AntdProvider form={{ validateMessages: genValidationMessages() }}>
       <App />
     </AntdProvider>
   </React.StrictMode>,
