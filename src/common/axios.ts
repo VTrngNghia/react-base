@@ -1,7 +1,7 @@
 import axiosBase, { AxiosInstance } from "axios";
 import config from "src/config/config";
 import { isEmpty } from "lodash";
-import { camelCasify, snakeCasify, toast } from "./utils";
+import { camelCasify, snakeCasify, toast } from "./utils/utils";
 import { FORBIDDEN, WAIT_CONTENT } from "../config/httpCodes";
 import i18next from "i18next";
 

@@ -1,5 +1,5 @@
 import { createSelector } from "@reduxjs/toolkit";
-import { State } from "../../reducer";
+import { State } from "../../common/reducer";
 
 const selectAuthState = (state: State) => state.auth;
 

@@ -7,9 +7,9 @@ import "./tailwind-after.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider as AntdProvider } from "antd";
-import genValidationMessages from "./common/genValidationMessages";
+import genValidationMessages from "./common/utils/genValidationMessages";
 import { Provider as ReduxProvider } from "react-redux";
-import { store } from "./store";
+import { store } from "./common/store";
 
 ReactDOM.render(
   <React.StrictMode>

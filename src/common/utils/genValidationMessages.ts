@@ -1,7 +1,7 @@
 import i18next from "i18next";
 
 const genValidationMessages = (locale = "en") => {
-  const validation = require(`src/locales/${locale}/validation`);
+  const validation = require(`src/common/locales/${locale}/validation`);
   const result = {};
   for (const key in validation.antd) {
     if (typeof validation.antd[key] == "string") {
