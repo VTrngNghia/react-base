@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "antd/dist/antd.less";
 import "./tailwind-before.css";
 import "./index.css";
 import "./tailwind-after.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { ConfigProvider as AntdProvider } from "antd";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AntdProvider>
+      <App />
+    </AntdProvider>
   </React.StrictMode>,
   document.getElementById("root"),
 );
