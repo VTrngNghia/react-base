@@ -2,27 +2,24 @@
 module.exports = {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
     },
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "@typescript-eslint"],
   "settings": {
     react: {
       version: "latest",
@@ -35,5 +32,5 @@ module.exports = {
     "eslint-comments/no-unlimited-disable": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-explicit-any": "off",
-  }
-}
+  },
+};
