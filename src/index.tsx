@@ -8,12 +8,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider as AntdProvider } from "antd";
 import genValidationMessages from "./common/genValidationMessages";
+import { Provider as ReduxProvider } from "react-redux";
+import { store } from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AntdProvider form={{ validateMessages: genValidationMessages() }}>
-      <App />
-    </AntdProvider>
+    <ReduxProvider store={store}>
+      <AntdProvider form={{ validateMessages: genValidationMessages() }}>
+        <App />
+      </AntdProvider>
+    </ReduxProvider>
   </React.StrictMode>,
   document.getElementById("root"),
 );
