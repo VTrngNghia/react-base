@@ -27,5 +27,12 @@ module.exports = {
       version: "latest",
     },
   },
-  "rules": {}
+  "rules": {
+    "eqeqeq": "off",
+    "react-hooks/rules-of-hooks": "error", // Check rules of Hooks
+    "react-hooks/exhaustive-deps": "error",
+    "eslint-comments/no-unlimited-disable": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+  }
 }
