@@ -1,0 +1,9 @@
+{
+  "src/**/*.{js,ts,jsx,tsx}": [
+    "eslint --fix",
+    "prettier --write --loglevel=warn"
+  ],
+  "src/**/*.json": [
+    "prettier --write --loglevel=warn"
+  ]
+}
