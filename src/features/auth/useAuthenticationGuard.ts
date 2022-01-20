@@ -8,5 +8,5 @@ export default function useAuthenticationGuard() {
   if (!accessToken) {
     history.push("/auth/login");
   }
-  return accessToken;
+  return !!accessToken;
 }
