@@ -14,6 +14,10 @@ const slice = createSlice({
       state.accessToken = payload.accessToken;
       state.refreshToken = payload.refreshToken;
     },
+    logout(state) {
+      state.accessToken = null;
+      state.refreshToken = null;
+    },
   },
 });
 

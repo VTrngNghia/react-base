@@ -9,7 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider as AntdProvider } from "antd";
 import genValidationMessages from "./common/utils/genValidationMessages";
 import { Provider as ReduxProvider } from "react-redux";
-import { store } from "./common/store";
+import { store } from "./plugins/store";
 
 ReactDOM.render(
   <React.StrictMode>
